@@ -1,0 +1,5 @@
+mcp>=1.28,<2
+openai>=1.40,<3
+httpx
+opentelemetry-api
+opentelemetry-sdk

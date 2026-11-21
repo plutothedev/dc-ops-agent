@@ -1,0 +1,11 @@
+.git
+.github
+.superpowers
+.pytest_cache
+__pycache__
+*.egg-info
+out
+traces
+tmp-sample
+tests
+docs

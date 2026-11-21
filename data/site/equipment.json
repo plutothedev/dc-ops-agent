@@ -1,0 +1,257 @@
+{
+  "_notice": "Fictional sample site for dc-ops-agent. Not a real facility.",
+  "equipment": [
+    {
+      "id": "UTIL-1",
+      "type": "utility",
+      "name": "Utility feed",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": [
+        "ATS-1"
+      ]
+    },
+    {
+      "id": "GEN-1",
+      "type": "generator",
+      "name": "Standby generator 1",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": [
+        "ATS-1"
+      ]
+    },
+    {
+      "id": "ATS-1",
+      "type": "ats",
+      "name": "Automatic transfer switch 1",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": [
+        "UPS-A1",
+        "UPS-B1"
+      ]
+    },
+    {
+      "id": "UPS-A1",
+      "type": "ups",
+      "name": "UPS A1",
+      "power_path": "A",
+      "status": "normal",
+      "downstream": [
+        "PDU-A1",
+        "PDU-A2"
+      ]
+    },
+    {
+      "id": "UPS-B1",
+      "type": "ups",
+      "name": "UPS B1",
+      "power_path": "B",
+      "status": "normal",
+      "downstream": [
+        "PDU-B1",
+        "PDU-B2"
+      ]
+    },
+    {
+      "id": "PDU-A1",
+      "type": "pdu",
+      "name": "PDU A1",
+      "power_path": "A",
+      "status": "normal",
+      "downstream": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ]
+    },
+    {
+      "id": "PDU-A2",
+      "type": "pdu",
+      "name": "PDU A2",
+      "power_path": "A",
+      "status": "normal",
+      "downstream": [
+        "R05",
+        "R06",
+        "R07",
+        "R08"
+      ]
+    },
+    {
+      "id": "PDU-B1",
+      "type": "pdu",
+      "name": "PDU B1",
+      "power_path": "B",
+      "status": "normal",
+      "downstream": [
+        "R01",
+        "R02",
+        "R03",
+        "R04"
+      ]
+    },
+    {
+      "id": "PDU-B2",
+      "type": "pdu",
+      "name": "PDU B2",
+      "power_path": "B",
+      "status": "normal",
+      "downstream": [
+        "R05",
+        "R06",
+        "R07",
+        "R08"
+      ]
+    },
+    {
+      "id": "R01",
+      "type": "rack",
+      "name": "Rack 01",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R02",
+      "type": "rack",
+      "name": "Rack 02",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R03",
+      "type": "rack",
+      "name": "Rack 03",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R04",
+      "type": "rack",
+      "name": "Rack 04",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R05",
+      "type": "rack",
+      "name": "Rack 05",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R06",
+      "type": "rack",
+      "name": "Rack 06",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R07",
+      "type": "rack",
+      "name": "Rack 07",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "R08",
+      "type": "rack",
+      "name": "Rack 08",
+      "power_path": "A+B",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CHWP-1",
+      "type": "pump",
+      "name": "Chilled water pump 1",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": [
+        "CH-1"
+      ]
+    },
+    {
+      "id": "CHWP-2",
+      "type": "pump",
+      "name": "Chilled water pump 2 (standby)",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": [
+        "CH-1"
+      ]
+    },
+    {
+      "id": "CH-1",
+      "type": "chiller",
+      "name": "Chiller 1",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": [
+        "CRAH-01",
+        "CRAH-02",
+        "CRAH-03",
+        "CRAH-04",
+        "CRAH-05",
+        "CRAH-06"
+      ]
+    },
+    {
+      "id": "CRAH-01",
+      "type": "crah",
+      "name": "CRAH unit 01",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CRAH-02",
+      "type": "crah",
+      "name": "CRAH unit 02",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CRAH-03",
+      "type": "crah",
+      "name": "CRAH unit 03",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CRAH-04",
+      "type": "crah",
+      "name": "CRAH unit 04",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CRAH-05",
+      "type": "crah",
+      "name": "CRAH unit 05",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    },
+    {
+      "id": "CRAH-06",
+      "type": "crah",
+      "name": "CRAH unit 06",
+      "power_path": "cooling",
+      "status": "normal",
+      "downstream": []
+    }
+  ]
+}
